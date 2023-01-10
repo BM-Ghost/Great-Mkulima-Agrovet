@@ -1,0 +1,211 @@
+/* Changing value of margin and padding for all attricute to 0 */
+* { 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* General styling for the body*/
+body {
+font-family: Arial, sans-serif;
+line-height: 1.4;
+color: #333;
+overflow-x: hidden;
+}
+.container{
+font-family:Tahoma, Geneva, sans-serif;
+text-align: justify;
+width: 900px;
+margin:auto;
+}
+
+/* Navbar */
+#navbar {
+display: flex;
+justify-content: space-between;
+background: #000;
+padding: 12.8px 80px;
+top:0;
+position:sticky;
+z-index: 1;
+border-bottom: 3px solid #0000FF;
+} 
+/* Styling the unordered list */
+#navbar ul {
+display: flex;
+list-style: none;
+align-items: center;
+}
+/* Styling the links in navbar */
+#navbar  li a {
+text-decoration: none;
+color: #fff;
+padding: 11.2px;
+font-size: 16px;
+margin: 0 8px;
+border-radius: 5px;
+transition: background-color 0.5s;
+}
+/* Navbar hover effect */
+#navbar  .nav-hover a:hover {
+color: #000;
+background-color: #fff;
+}
+/* Background styling for the footer*/
+.bg{
+background: url(Images/footer.png);
+color: #fff;
+}
+/* Styling fot links in the footer */
+.bg a{
+text-decoration: none;
+color: #fff;
+margin-bottom: 10px;
+padding: 30px;
+}
+/* Hover effect fot links in the footer*/
+.bg a:hover{
+color:#0378ff;
+}
+/* Styling the content that will appear on top of the background*/
+#content{
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0,0,0,0.6); /* background Opacity increased to make it darker */
+color: #fff;
+height: 600px;
+}
+/* background styling and image for the content */
+#contentImage{
+background: url(Images/image.png) no-repeat center center/cover;
+top: 30px;
+}
+/* For the home page */
+.page{
+font-family:Tahoma, Geneva, sans-serif; /* changing font */
+color: #000;
+height:440px;
+width:350px;
+margin: auto;
+margin-bottom: 20px;
+margin-top:60px;
+}
+.page p{
+padding: 20px;
+}
+.page a{
+background: #000;
+text-align: center;
+text-decoration: none;
+color: #fff;
+padding: 15px;
+margin-left: 120px;
+margin-top: -100px;
+border: 0.5px solid;
+transition: background 0.5s;
+}
+.page a:hover {
+background: #fff;
+color: #000;
+}
+/* For the about section */
+#about {
+padding: 80px 0;
+}
+#aboutMe {
+font-size: 60px;
+margin-left: 155px;
+}
+#about .content-info{
+display: flex;
+}
+#about .image-info img{
+display: block;
+margin-left: auto;
+margin-top: 50px;
+border-radius: 50%;
+width: 65%;
+margin-right: 160px;
+flex: 1;
+}
+#about .image-info{
+padding-right: 96px;
+flex: 1
+}
+/* For the contact page */
+#contact {
+margin: auto;
+padding: 80px 0;
+width: 1600px;
+height:800px;
+}
+/* Form box styling */
+#contact .form-box{
+width:600px;
+margin-left:370px;
+background: #fff;
+padding: 32px;
+}
+#contact .form-group {
+margin-bottom: 32px;
+}
+#contact .form-group input,
+#contact .form-group textarea{
+width:100%;
+justify-content: left;
+font-size: 20.8px;
+padding:16px;
+border: 0.5px solid #333;
+border-radius: 2px;
+}
+/* Changing the text for textarea */
+#contact .form-group textarea{
+font-family: Arial, sans-serif;
+}
+/* Styling the button */
+#contact .contact-btn{
+width: 40%;
+color:#0378ff;
+background: #fff;
+padding: 16px 16px;
+border-color: #0378ff;
+font-size: 24px;
+margin-bottom: 32px;
+cursor: pointer;
+border-width: 0.5px;
+transition: background 0.5s;
+}
+#contact .contact-btn:hover{
+background: #0378ff;
+color:#fff;
+}
+/* For the Customer Service page */
+.Customer Service {
+width: 60%;
+color:#fff;
+background: #0378ff;
+padding: 15px 50px;
+cursor: pointer;
+border-width: 1px;
+transition: background 0.5s;
+border-color: #0378ff;
+border: 0.5px solid;
+border-radius: 2px;
+text-decoration: none;
+}
+.Customer Service:hover{
+background: #fff;
+color:#0378ff;
+}
+/* Footer */
+footer {
+padding:40px;
+}
+footer p {
+margin-top: 10px;
+text-align: center;
+}

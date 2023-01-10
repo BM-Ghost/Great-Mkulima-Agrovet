@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+   <head> <!-- Document Header Starts -->
+      <title>Contact</title>
+      <meta name="description" content="Contact page">
+      <meta name="keywords" content="Portfolio,HTML,CSS,JavaScript">
+      <meta name="author" content="Group 2022">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <style>
+         #contact h2{
+         margin-left: 400px;
+         font-size: 48px;
+         }
+      </style>
+   </head> <!-- Document Header Ends -->
+   <body>
+      <!--Navigation Bar -->
+      <nav id="navbar">
+         <a class="logo" href="index.html" style="margin-bottom: -10px">
+         <img src="Images/logo.png" style="width: 50px; height: 50px;"></a>
+         <ul class="nav-hover">
+            <li><a class="aNav" href="index.html">Home</a></li>
+            <li><a class="aNav" href="Customer Service.html">Customer Service</a></li>
+            <li><a class="aNav" href="Products and Services.html">Products and Services</a></li>
+            <li><a class="aNav" href="New Products.html">New Produts</a></li>
+            <li><a class="aNav" href="Research.html">Research</a></li>
+            <li><a class="aNav" href="Contact.html">Contact</a></li>
+         </ul>
+      </nav>
+      <!-- Contains background and header-->
+      <div id ="contentImage"style="height: 600px;">
+         <div id="content" >
+            <header>
+               <h1 style="font-size: 60px;padding-top: 240px;font-family:Tahoma, Geneva, sans-serif;">
+                  <b>Contact</b>
+               </h1>
+            </header>
+         </div> <!-- div id="content" ends -->          
+      </div> <!-- div id="contentImage" ends -->      
+         <div id="contact">
+            <h2> Get in Touch </h2>
+            <div style="float: left; margin-right: 20px;">
+               <div class="form-box">
+                  <form name="messageForm" onsubmit="validateForm()">
+                     <div class="form-group">
+                        <textarea rows="5" name="message" placeholder="Enter Your Message"></textarea> 
+                     </div>
+                     <div class="form-group">
+                        <input type="text" name="firstname" placeholder="Enter Your First Name">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" name="lastname" placeholder="Enter Your Last Name">
+                     </div>
+                     <div class="form-group">
+                        <input type="mail" name="email" placeholder="Enter Your Email">
+                     </div>
+                     <input type="submit" value="Send Message" class="contact-btn">
+                  </form>
+                  <script>
+                     function validateForm() {
+                     	var message = document.forms["messageForm"]["message"].value;
+                     	var fname = document.forms["messageForm"]["firstname"].value;
+                     	var lname = document.forms["messageForm"]["lastname"].value;
+                     	var email = document.forms["messageForm"]["email"].value;
+                     	if (fname == "" || lname == "" || message == "" || email==""){
+                     		alert("Empty fields found. Please fill the form.");
+                     	}
+                     	else {
+                     		alert("Thank you for the feedback.");
+                     	}
+                     }
+                  </script> <!-- script ends -->                  
+               </div> <!-- div class="form-box" ends -->               
+            </div>
+            <div style="float: left;margin-top: 20px;margin-left: -35px; ">
+               <img src="Images/Contact/pic1.png"> 
+               <div style="margin-left: 54px;margin-top: -50px;font-family:Tahoma, Geneva, sans-serif;"> University Way, Nairobi, Kenya
+               </div>
+               <img src="Images/Contact/pic2.png" style="margin-top: 20px;font-family:Tahoma, Geneva, sans-serif;">
+               <div style="margin-left: 54px;margin-top: -60px"> 
+                  +254794142204 <br> <span> Mon to Fri 9am to 5pm </span>
+               </div>
+               <img src="Images/Contact/pic3.png" style="margin-top: 20px;margin-left: -5px"> 
+               <div style="margin-left: 54px;margin-top: -50px;font-family:Tahoma, Geneva, sans-serif;"> 
+                  greatm.agro@gmail.co.ke <br> <span> Send your query anytime! </span>
+               </div>
+            </div> <!-- div ends -->            
+         </div> <!-- div id="contact" ends -->         
+      <footer class="bg">
+         <div style="align-items: center; text-align: center;">
+            <a href="Home.html">Portfolio</a>
+            <a href="Customer Service.html">About</a>
+            <a href="Contact.html">Contact</a>
+         </div>
+         <hr style="margin: 20px;">
+         <p>Copyright &copy; Group 2022</p>
+      </footer> <!-- footer ends -->      
+   </body>
+</html>
